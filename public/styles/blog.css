@@ -1,0 +1,145 @@
+    /* General Tags */
+
+    h1 {
+        margin-block-start: 20px !important;
+        margin-block-end: 20px !important;
+    }
+
+    h3 {
+        margin-block-start: 0;
+        margin-block-end: -1.2em;
+        text-align: center;
+    }
+
+
+    @media screen and (max-width:768px) {
+
+        /* Web template */
+        .web-template {
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1.5r 2fr 0.8fr 0.5fr 100px;
+            grid-template-areas:
+                "about"
+                "stages"
+                "projects"
+                "contact"
+                "footer"
+            ;
+            place-items: center;
+        }
+
+        .web-template>* {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+
+        /* For Gallery Pages */
+        .all-projects {
+            width: 100%;
+            display: grid !important;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            padding-block-start: 20px !important;
+        }
+
+        .project-box {
+            width: 100%;
+            height: 500px;
+        }
+
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    @media screen and (min-width:768px) and (max-width:1200px) {
+
+        /* Web template */
+        .web-template {
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1.5r 2fr 0.8fr 0.5fr 100px;
+            grid-template-areas:
+                "about"
+                "stages"
+                "projects"
+                "contact"
+                "footer"
+            ;
+            place-items: center;
+        }
+
+        .web-template>* {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+
+        /* For Gallery Pages */
+        .all-projects {
+            width: 100%;
+            display: grid !important;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding-block-start: 20px !important;
+        }
+
+        .project-box {
+            width: 100%;
+            height: 500px;
+        }
+
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    @media screen and (min-width:1200px) {
+
+        /* Web template */
+        .web-template {
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 0.1fr 100px;
+            grid-template-areas:
+                "projects"
+                "contact"
+                "footer"
+            ;
+            place-items: center;
+        }
+
+        .web-template>* {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* For Gallery Pages */
+        .all-projects {
+            width: 100%;
+            display: grid !important;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding-block-start: 20px !important;
+        }
+
+        .project-box {
+            width: 100%;
+            height: 500px;
+        }
+
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }

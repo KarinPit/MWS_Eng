@@ -1,0 +1,360 @@
+.start-arrow p {
+    text-align: center;
+}
+
+@media screen and (max-width:768px) {
+
+    /* Web template */
+    .web-template {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "carsl"
+            "welcome"
+            "about"
+            "services"
+            "projects"
+            "contact"
+            "footer"
+        ;
+        place-items: center;
+    }
+
+    .web-template>* {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+
+    .carousel {
+        grid-area: carsl;
+    }
+
+
+    .welcome,
+    .about {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: start;
+        width: 100%;
+        height: fit-content;
+        background: rgb(255, 255, 255);
+        padding: 0 0 5em 0;
+    }
+
+    .welcome {
+        grid-area: welcome;
+        background: #A0BBC7 !important;
+        padding: 3em 0 5em 0;
+    }
+
+    .about {
+        grid-area: about;
+        background: white;
+    }
+
+
+    /* Carousel */
+
+    .carousel {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .carousel-images img {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+    }
+
+    .start-arrow {
+        position: absolute;
+        bottom: 20%;
+        align-self: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+        font-size: clamp(10px, 2vw, 30px);
+        width: fit-content;
+        padding: 0.8em;
+        height: fit-content;
+        border-radius: 5%;
+        background: rgba(255, 255, 255, 0.671);
+        transition: 0.5s all ease-in;
+    }
+
+    .start-arrow img {
+        height: 2em;
+        width: 2em;
+        margin-inline-start: 0.5em;
+    }
+
+    .carousel-button button {
+        position: absolute;
+        top: 50%;
+        width: 5em;
+        height: 5em;
+        z-index: 2;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .carousel-button .prev {
+        left: 1%;
+    }
+
+    .carousel-button .next {
+        right: 1%;
+    }
+
+}
+
+@media screen and (min-width:768px) and (max-width:1200px) {
+
+    /* Web template */
+    .web-template {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "carsl"
+            "welcome"
+            "about"
+            "services"
+            "projects"
+            "contact"
+            "footer"
+        ;
+        place-items: center;
+    }
+
+    .web-template>* {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+
+    .carousel {
+        grid-area: carsl;
+    }
+
+    .welcome,
+    .about {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: start;
+        width: 100%;
+        height: 100%;
+        background: rgb(255, 255, 255);
+        padding: 0 0 5em 0;
+    }
+
+    .welcome {
+        grid-area: welcome;
+        background: #A0BBC7 !important;
+        padding: 3em 0 5em 0;
+    }
+
+    .about {
+        grid-area: about;
+        background: white;
+    }
+
+    /* Carousel */
+
+    .carousel {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .carousel-images img {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+    }
+
+    .start-arrow {
+        position: absolute;
+        bottom: 5%;
+        align-self: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        font-size: clamp(10px, 5vw, 30px);
+        width: max-content;
+        padding: 0 2.5em 0 1.5em;
+        height: 3.5em;
+        border-radius: 5%;
+        background: rgba(255, 255, 255, 0.671);
+        transition: 0.5s all ease-in;
+    }
+
+    .start-arrow img {
+        height: 2em;
+        width: 2em;
+        margin-inline-start: 0.5em;
+    }
+
+    .carousel-button button {
+        position: absolute;
+        top: 50%;
+        width: 5em;
+        height: 5em;
+        z-index: 2;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .carousel-button .prev {
+        left: 1%;
+    }
+
+    .carousel-button .next {
+        right: 1%;
+    }
+
+}
+
+@media screen and (min-width:1200px) {
+
+    /* Web template */
+    .web-template {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "carsl"
+            "welcome"
+            "about"
+            "services"
+            "projects"
+            "contact"
+            "footer"
+        ;
+        place-items: center;
+    }
+
+    .carousel {
+        grid-area: carsl;
+    }
+
+    .welcome {
+        grid-area: welcome;
+        background: #A0BBC7;
+    }
+
+    .welcome,
+    .about {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        padding: 4em;
+    }
+
+    .about {
+        grid-area: about;
+        background: #e6e6e6;
+    }
+
+    /* Carousel */
+
+    .carousel {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .carousel-images img {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+    }
+
+    .start-arrow {
+        position: absolute;
+        bottom: 10%;
+        align-self: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        font-size: 1.5em;
+        width: max-content;
+        padding: 0 2.5em 0 1.5em;
+        height: 3.5em;
+        border-radius: 5%;
+        background: rgba(255, 255, 255, 0.671);
+        transition: opacity 0.5s ease-in, visibility 0.5s ease-in;
+        visibility: visible;
+    }
+
+    .start-arrow img {
+        height: 2em;
+        width: 2em;
+        margin-inline-start: 0.5em;
+    }
+
+    .carousel-button button {
+        position: absolute;
+        top: 50%;
+        width: 5em;
+        height: 5em;
+        z-index: 2;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .carousel-button .prev {
+        left: 1%;
+    }
+
+    .carousel-button .next {
+        right: 1%;
+    }
+
+    /*     .service-option {
+        width: 25%;
+        height: 400px;
+        background: white;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .service-option img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: opacity 0.5s ease;
+    }
+
+    .service-option p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 70%;
+        text-align: center;
+        color: black;
+        font-size: 1.8em;
+        font-weight: 700;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        z-index: 2;
+    }
+
+    .service-option:hover img {
+        opacity: 0.3;
+    }
+
+    .service-option:hover p {
+        opacity: 1;
+    } */
+}

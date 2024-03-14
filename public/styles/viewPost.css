@@ -1,0 +1,138 @@
+    /* Web template */
+    .web-template {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0.1fr 100px;
+        grid-template-areas:
+            "projects"
+            "contact"
+            "footer"
+        ;
+        place-items: center;
+        height: 100vh;
+    }
+
+    .navbars {
+        grid-area: navbars;
+    }
+
+
+    @media screen and (max-width:768px) {
+        /* General Tags */
+
+        h1 {
+            margin-block-start: 0;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        h3 {
+            margin-block-start: 0;
+            margin-block-end: -1.2em;
+            text-align: center;
+        }
+
+        ul {
+            padding-right: 10px;
+        }
+
+        /* Project Page View */
+
+        .projects-page pre {
+            width: 80vw;
+            min-height: 700px;
+            margin: 0 auto;
+            background: rgb(241, 240, 240);
+            padding: 20px 30px;
+        }
+
+        .projects-page {
+            margin-block-start: 180px;
+            text-align: justify;
+            height: fit-content !important;
+        }
+
+        .projects {
+            justify-content: start !important;
+        }
+
+    }
+
+    @media screen and (min-width:768px) and (max-width:1200px) {
+        /* General Tags */
+
+        h1 {
+            margin-block-start: 0;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        h3 {
+            margin-block-start: 0;
+            margin-block-end: -1.2em;
+            text-align: center;
+        }
+
+        /* Project Page View */
+
+        .projects-page pre {
+            width: 80%;
+            min-height: 700px;
+            margin: 0 auto;
+            background: rgb(241, 240, 240);
+            padding: 40px 60px;
+        }
+
+        .projects-page {
+            margin-block-start: 180px;
+            text-align: justify;
+            height: fit-content !important;
+        }
+
+        .projects {
+            justify-content: start !important;
+        }
+    }
+
+    @media screen and (min-width:1200px) {
+        /* General Tags */
+
+        h1 {
+            margin-block-start: 0;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        h3 {
+            margin-block-start: 0;
+            margin-block-end: -1.2em;
+            text-align: center;
+        }
+
+        /* Project Page View */
+
+        .projects-page pre {
+            width: 80%;
+            min-height: 700px;
+            margin: 0 auto;
+            background: rgb(241, 240, 240);
+            padding: 40px 60px;
+        }
+
+        .projects-page {
+            height: fit-content !important;
+            margin-block-start: 150px;
+            text-align: justify;
+        }
+
+        .projects {
+            justify-content: start !important;
+        }
+    }

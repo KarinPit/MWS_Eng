@@ -1,0 +1,352 @@
+/* Web template */
+.web-template {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "navbars"
+        "about"
+        "stages"
+        "services"
+        "contact"
+        "footer"
+    ;
+    place-items: center;
+}
+
+.navbars {
+    grid-area: navbars;
+}
+
+.summary-text {
+    display: none;
+}
+
+.services {
+    background: rgb(230, 230, 230) !important;
+}
+
+.service-name {
+    height: 25vh !important;
+}
+
+@media screen and (max-width:768px) {
+
+    /* General Tags */
+
+    h1 {
+        margin-block-start: 0;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    .about {
+        grid-area: about;
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        height: 100%;
+        background: rgb(255, 255, 255);
+        padding: 0 0 5em 0;
+    }
+
+    .align-start {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .align-end {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+        width: 100%;
+        height: 100%;
+    }
+
+    .text-col {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .image-col {
+        width: 100%;
+        height: 100%;
+        padding: 14em 0 1em 0;
+    }
+
+    .image-col img {
+        width: 100%;
+        height: 100% !important;
+        min-height: 10em;
+        object-fit: cover;
+        object-position: 0% 0%;
+    }
+
+    .text-col pre {
+        text-align: start;
+        position: relative;
+        font-size: 1.1em;
+        width: 90%;
+        white-space: pre-wrap;
+        margin: 0;
+    }
+
+    .text-col p {
+        width: 100%;
+        text-align: justify;
+    }
+
+    .default-button {
+        font-size: 1.2em;
+        background: none;
+        border: 2px solid black;
+        width: 6em;
+        height: 1.8em;
+        cursor: pointer;
+
+    }
+
+    /* Stages */
+    .stages {
+        display: flex;
+        grid-area: stages;
+        justify-content: center;
+        align-items: center;
+        background: #A0BBC7;
+        padding: 5em 0;
+    }
+
+    .stages-box {
+        width: 80%;
+        height: 100%;
+        padding: 1em;
+        background: white;
+    }
+
+    .stages pre {
+        height: fit-content;
+        text-align: justify;
+        margin: 0 auto;
+        padding-block-start: 2em;
+    }
+
+    .stages pre p {
+        text-align: justify;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1200px) {
+
+    /* General Tags */
+
+    h1 {
+        margin-block-start: 0;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    .about {
+        grid-area: about;
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        height: 100%;
+        background: rgb(255, 255, 255);
+        padding: 0 0 5em 0;
+    }
+
+    .align-start {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .align-end {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+        width: 100%;
+        height: 100%;
+    }
+
+    .text-col {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .image-col {
+        width: 100%;
+        height: 100%;
+        padding: 11em 0 1em 0;
+    }
+
+    .image-col img {
+        width: 100%;
+        height: 100% !important;
+        min-height: 10em;
+        object-fit: cover;
+        object-position: 0% 0%;
+    }
+
+    .text-col pre {
+        text-align: start;
+        position: relative;
+        font-size: 1.1em;
+        width: 80%;
+        white-space: pre-wrap;
+        margin: 0;
+    }
+
+    .text-col p {
+        width: 100%;
+        text-align: justify;
+    }
+
+    .default-button {
+        font-size: 1.2em;
+        background: none;
+        border: 2px solid black;
+        width: 6em;
+        height: 1.8em;
+        cursor: pointer;
+
+    }
+
+    /* Stages */
+    .stages {
+        display: flex;
+        grid-area: stages;
+        justify-content: center;
+        align-items: center;
+        background: #A0BBC7;
+        padding: 5em 0;
+    }
+
+    .stages-box {
+        width: 80%;
+        height: 100%;
+        padding: 3em;
+        background: white;
+    }
+
+    .stages pre {
+        text-align: justify;
+        width: 70%;
+        font-size: 1.5em;
+        margin: 0 auto;
+        padding-block-start: 2em;
+    }
+}
+
+@media screen and (min-width:1200px) {
+
+    /* General Tags */
+
+    h1 {
+        margin-block-start: 0;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    .about {
+        grid-area: about;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        background: rgb(255, 255, 255);
+        padding: 7em 4em;
+    }
+
+    .about img {
+        width: 500px;
+        height: 500px;
+        object-fit: cover;
+    }
+
+    .align-start {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+        height: 100%;
+    }
+
+    .align-end {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+        width: 100%;
+        height: 100%;
+    }
+
+    .text-col {
+        width: 50%;
+        height: 100%;
+        padding-inline-start: 3em;
+    }
+
+    .text-col pre {
+        text-align: start;
+        position: relative;
+        font-size: 1.3em;
+        width: 90%;
+        white-space: pre-wrap;
+        margin: 0;
+    }
+
+    .text-col p {
+        width: 100%;
+        text-align: justify;
+    }
+
+    .default-button {
+        font-size: 1.2em;
+        background: none;
+        border: 2px solid black;
+        width: 6em;
+        height: 1.8em;
+        cursor: pointer;
+
+    }
+
+    /* Stages */
+    .stages {
+        display: flex;
+        flex-direction: column;
+        grid-area: stages;
+        justify-content: center;
+        align-items: center;
+        background: #A0BBC7;
+        padding: 5em 0;
+    }
+
+    .stages-box {
+        width: 80%;
+        height: fit-content;
+        padding: 3em;
+        background: white;
+    }
+
+    .stages pre {
+        text-align: justify;
+        width: 70%;
+        font-size: 1.5em;
+        margin: 0 auto;
+        padding-block-start: 2em;
+    }
+
+}

@@ -1,6 +1,6 @@
 
 <template>
-    <div id="big-screens-navbar" class="social-media-icons">
+     <div class="social-media-icons small-screens-navbar">
         <a class="icon" @click="openFacebook">
             <img src="/images/facebook_black.svg" alt="facebook icon">
         </a>
@@ -12,10 +12,33 @@
         </a>
     </div>
 
-    <div class="nav-links">
-        <a id="home" class="nav-link" :class="{ 'active-link': isActiveLink('/') }" href="/">
-            <span class="nav-link-span">{{ navNames.Home }}</span>
+    <div class="logo-icons">
+        <a class="icon logo-icon" href="/">
+            <img v-if="navNames.logoImage && navNames.logoImage.data && navNames.logoImage.data.attributes && navNames.logoImage.data.attributes.url"
+            :src="navNames.logoImage.data.attributes.url" alt="MWS logo">
         </a>
+        <a class="icon phone-number" @click="openDialer(phoneNumber)">
+            <p>{{ phoneNumber }}</p>
+        </a>
+    </div>
+
+    <div class="nav-links">
+        <a class="nav-link" href="#">
+            <span class="nav-link-span">Hebrew</span>
+        </a>
+
+        <a id="contact" class="nav-link" :class="{ 'active-link': isActiveLink('/contact') }" href="/contact">
+            <span class="nav-link-span">{{ navNames.Contact }}</span>
+        </a>
+
+        <a id="blog" class="nav-link" :class="{ 'active-link': isActiveLink('/blog') }" href="/blog">
+            <span class="nav-link-span">{{ navNames.Blog }}</span>
+        </a>
+
+        <a id="projects" class="nav-link" :class="{ 'active-link': isActiveLink('/projects') }" href="/projects">
+            <span class="nav-link-span">{{ navNames.Projects }}</span>
+        </a>
+
         <div class="logo-dropdown" @mouseover="handleDropdownHover(true)" @mouseleave="handleDropdownHover(false)">
             <a class="icon logo-icon">
                 <span :class="{
@@ -39,30 +62,13 @@
                 </a>
             </div>
         </div>
-        <a id="projects" class="nav-link" :class="{ 'active-link': isActiveLink('/projects') }" href="/projects">
-            <span class="nav-link-span">{{ navNames.Projects }}</span>
-        </a>
-        <a id="blog" class="nav-link" :class="{ 'active-link': isActiveLink('/blog') }" href="/blog">
-            <span class="nav-link-span">{{ navNames.Blog }}</span>
-        </a>
-        <a id="contact" class="nav-link" :class="{ 'active-link': isActiveLink('/contact') }" href="/contact">
-            <span class="nav-link-span">{{ navNames.Contact }}</span>
-        </a>
-        <a class="nav-link" href="#">
-            <span class="nav-link-span">English</span>
-        </a>
-    </div>
-    <div class="logo-icons">
-        <a class="icon phone-number" @click="openDialer(phoneNumber)">
-            <p>{{ phoneNumber }}</p>
-        </a>
-        <a class="icon logo-icon" href="/">
-            <img v-if="navNames.logoImage && navNames.logoImage.data && navNames.logoImage.data.attributes && navNames.logoImage.data.attributes.url"
-                :src="navNames.logoImage.data.attributes.url" alt="MWS logo">
+
+        <a id="home" class="nav-link" :class="{ 'active-link': isActiveLink('/') }" href="/">
+            <span class="nav-link-span">{{ navNames.Home }}</span>
         </a>
     </div>
 
-    <div class="social-media-icons small-screens-navbar">
+    <div id="big-screens-navbar" class="social-media-icons">
         <a class="icon" @click="openFacebook">
             <img src="/images/facebook_black.svg" alt="facebook icon">
         </a>

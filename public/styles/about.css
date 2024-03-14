@@ -26,8 +26,10 @@
     background: rgb(230, 230, 230) !important;
 }
 
-.service-name {
+.about-services .service-name {
     height: 25vh !important;
+    max-height: 500px;
+    min-height: 0px;
 }
 
 @media screen and (max-width:768px) {

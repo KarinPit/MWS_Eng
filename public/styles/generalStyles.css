@@ -5,7 +5,6 @@
 }
 
 html {
-    direction: rtl;
     scroll-behavior: smooth;
 }
 
@@ -74,7 +73,7 @@ a {
 }
 
 .aligned-right {
-    text-align: right;
+    text-align: left;
 }
 
 .space-p {
@@ -369,7 +368,7 @@ pre {
 
     .logo-icons {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     .logo-icons p {
@@ -383,7 +382,7 @@ pre {
     .menu-button {
         position: fixed;
         top: 2.5%;
-        right: 8%;
+        left: 8%;
         display: flex;
         border: none;
     }
@@ -401,7 +400,7 @@ pre {
 
     .nav-links-open {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         gap: 20px;
         padding: 2em 1em;
         border-radius: 3%;
@@ -418,7 +417,7 @@ pre {
         height: fit-content;
         width: 100%;
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         gap: 20px;
         align-items: center;
         justify-content: space-between;
@@ -687,7 +686,7 @@ pre {
 
     .logo-icons {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     .logo-icons p {
@@ -701,7 +700,7 @@ pre {
     .menu-button {
         position: fixed;
         top: 1%;
-        right: 5%;
+        left: 5%;
         display: flex;
         border: none;
     }
@@ -719,7 +718,7 @@ pre {
 
     .nav-links-open {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         gap: 20px;
         padding: 2em 1em;
         border-radius: 3%;
@@ -735,7 +734,7 @@ pre {
         inset: 0 0 auto 0;
         height: fit-content;
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         gap: 20px;
         align-items: center;
         justify-content: space-between;

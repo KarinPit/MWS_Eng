@@ -102,7 +102,7 @@ const aboutMeImage =
               <p set:html={richTextParser.convertToMarkdown(mainDescription)} />
             </pre>
             <button class="default-button" onclick="location.href='/contact'">
-              <p class="button-text">צרו קשר</p>
+              <p class="button-text">Contact us</p>
             </button>
           </div>
           <div class="image-col">
@@ -117,7 +117,7 @@ const aboutMeImage =
               <p set:html={richTextParser.convertToMarkdown(aboutMeDescription)} />
             </pre>
             <button class="default-button" onclick="location.href='/about'">
-              <p class="button-text">קראו עוד</p>
+              <p class="button-text">Read more</p>
             </button>
           </div>
           <div class="image-col">
@@ -126,11 +126,12 @@ const aboutMeImage =
         </div>
 
         <div class="services">
+          <h1>MWS Studio Service Plans</h1>
           <ServiceGallery client:load />
         </div>
 
         <div class="projects no-margin">
-          <h1 style="text-align: center;">פרויקטים נבחרים</h1>
+          <h1 style="text-align: center;">Selected Projects</h1>
           <ProjectGallerySample client:load />
         </div>
 
@@ -139,14 +140,14 @@ const aboutMeImage =
         </div>
 
         <div class="footer">
+          <p>054-4568784</p>
+          <p>Karin Pitlik - Web Development</p>
           <p>
-            <a href="/accessibility">| הצהרת נגישות |</a>
+            <a href="/accessibility">| Accessibility Statement |</a>
             <!-- <a href="/הצהרת נגישות.docx" download="Accessibility File"
               >| הצהרת נגישות |
             </a> -->
           </p>
-          <p>054-4568784</p>
-          <p>Karin Pitlik - Web Development</p>
         </div>
       </div>
     </main>
@@ -159,7 +160,7 @@ const aboutMeImage =
     src="https://www.negishim.com/accessibility/accessibility_pro.js"
     type="text/javascript"></script>
   <script type="text/javascript">
-    accessibility_rtl = true;
+    accessibility_rtl = false;
     pixel_from_side = 20;
     pixel_from_start = 150;
   </script>

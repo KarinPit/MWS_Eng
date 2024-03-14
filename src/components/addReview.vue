@@ -1,6 +1,6 @@
 <template>
   <button class="add-review-button" @click="showPopup = true">
-    <p>הוסף ביקורת</p>
+    <p>Add review</p>
   </button>
   <transition name="fade" appear>
     <div v-if="showPopup">
@@ -8,9 +8,9 @@
         <div class="popup-menu" ref="popupElement">
           <div class="popup-content">
             <button class="close-button" type="button" @click="closePopup" aria-label="Close">x</button>
-            <input type="text" id="customerName" v-model="customerName" placeholder="הכנס שם הלקוח" required>
-            <textarea id="reviewText" v-model="reviewText" placeholder="כתוב את ביקורתך כאן" required></textarea>
-            <button class="send-button" @click="submitReview">שלח</button>
+            <input type="text" id="customerName" v-model="customerName" placeholder="Customer name" required>
+            <textarea id="reviewText" v-model="reviewText" placeholder="Write your review here" required></textarea>
+            <button class="send-button" @click="submitReview">Send</button>
           </div>
         </div>
       </div>

@@ -1,5 +1,4 @@
 <template>
-    <h1>תוכניות הליווי של סטודיו MWS</h1>
     <div class="service-option-menu">
         <div class="service-box" v-for="(project, index) in mainProjects" :key="index" @mouseover="toggleHovered(index)"
             @mouseout="toggleHovered(-1)">
@@ -10,7 +9,7 @@
                 <h4>{{ project.name }}</h4>
                 <pre class="summary-text" v-html="richTextParser.convertToMarkdown(project.summary)"></pre>
                 <a :href="`/services/${project.name}`">
-                    <p class="read-more">למידע נוסף</p>
+                    <p class="read-more">Read more</p>
                 </a>
             </div>
         </div>

@@ -1,7 +1,6 @@
 ---
 import Navigation from "../components/navigation.vue";
 import ContactForm from "../components/contactForm.vue";
-import ProjectGallerySample from "../components/projectGallerySample.vue";
 import ServiceGallery from "../components/serviceGallery.vue";
 import Stages from "../components/stages.vue";
 import LoadingPage from "../html/loadingPage.astro";
@@ -61,7 +60,8 @@ res = await loadData();
                         </pre>
                         <button
                             class="default-button"
-                            onclick="location.href='/contact'">צרו קשר</button
+                            onclick="location.href='/contact'"
+                            >Contact us</button
                         >
                     </div>
                     <div class="image-col">
@@ -79,7 +79,7 @@ res = await loadData();
                     </div>
                 </div>
 
-                <div class="services">
+                <div class="services about-services">
                     <ServiceGallery client:load />
                 </div>
 
@@ -88,14 +88,14 @@ res = await loadData();
                 </div>
 
                 <div class="footer">
+                    <p>054-4568784</p>
+                    <p>Karin Pitlik - Web Development</p>
                     <p>
-                        <a href="/accessibility">| הצהרת נגישות |</a>
+                        <a href="/accessibility">| Accessibility Statement |</a>
                         <!-- <a href="/הצהרת נגישות.docx" download="Accessibility File"
                         >| הצהרת נגישות |
                       </a> -->
                     </p>
-                    <p>054-4568784</p>
-                    <p>Karin Pitlik - Web Development</p>
                 </div>
             </div>
         </main>

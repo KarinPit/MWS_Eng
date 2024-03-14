@@ -5,7 +5,7 @@
         </a>
     </div>
     <div class="contact-info">
-        <h2>צרו קשר</h2>
+        <h2>Contact info</h2>
         <div class="info">
             <p @click="openEmail(info.emailAddress)" style="cursor: pointer" class="info-text">{{ info.emailAddress
             }}</p>
@@ -14,7 +14,7 @@
         </div>
     </div>
     <div class="social-media ">
-        <h2>עקבו אחרי</h2>
+        <h2>Social media</h2>
         <div class="social-media-icons contact-icons">
             <a class="icon" @click="openFacebook">
                 <img src="/images/facebook_black.svg" alt="facebook icon">
@@ -29,15 +29,15 @@
     </div>
     <div class="contact-form">
         <form @submit.prevent="submitForm">
-            <h2>השאירו פרטים ואחזור אליכם</h2>
-            <label for="name">שם מלא</label>
-            <input type="text" v-model="name" placeholder="שם מלא" required />
-            <label for="phone">טלפון</label>
-            <input type="tel" v-model="phone" placeholder="טלפון" pattern="(\+?\d{1,3})?(\d{3})-?(\d{3})-?(\d{4})"
+            <h2>Leave your details for a callback</h2>
+            <label for="name">Full name</label>
+            <input type="text" v-model="name" placeholder="Full name" required />
+            <label for="phone">Phone number</label>
+            <input type="tel" v-model="phone" placeholder="Phone number" pattern="(\+?\d{1,3})?(\d{3})-?(\d{3})-?(\d{4})"
                 required />
-            <label for="email">מייל</label>
-            <input type="email" v-model="email" placeholder="מייל" />
-            <input class="submit-button" type="submit" value="שלח" />
+            <label for="email">Email</label>
+            <input type="email" v-model="email" placeholder="Email" />
+            <input class="submit-button" type="submit" value="Send" />
         </form>
     </div>
 </template>

@@ -23,7 +23,7 @@
     </div>
 
     <div class="nav-links">
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="https://www.designmws.com/">
             <span class="nav-link-span">Hebrew</span>
         </a>
 

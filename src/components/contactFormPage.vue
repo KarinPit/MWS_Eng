@@ -1,16 +1,16 @@
 <template>
     <form @submit.prevent="submitForm">
-        <h2>רוצים שאצור איתכם קשר? השאירו פרטים ואחזור אליכם</h2>
-        <input type="text" v-model="name" placeholder="שם מלא" required />
-        <input type="tel" v-model="phone" placeholder="טלפון" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required />
-        <input type="email" v-model="email" placeholder="מייל" />
-        <input type="text" v-model="comments" placeholder="הערות" required />
-        <input class="submit-button" type="submit" value="שלח" />
+        <h2>Want me to contact you? Leave your details here</h2>
+        <input type="text" v-model="name" placeholder="Full name" required />
+        <input type="tel" v-model="phone" placeholder="Phone number" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required />
+        <input type="email" v-model="email" placeholder="Email address" />
+        <input type="text" v-model="comments" placeholder="Comments" required />
+        <input class="submit-button" type="submit" value="Send" />
     </form>
     <div class="info-div">
-        <h2>מוזמנים גם לפנות אלי</h2>
-        <p>טלפון: {{ info.phoneNumber }}</p>
-        <p>אימייל: {{ info.emailAddress }}</p>
+        <h2>My contact info</h2>
+        <p>Phone number: {{ info.phoneNumber }}</p>
+        <p>Email address: {{ info.emailAddress }}</p>
     </div>
 </template>
   

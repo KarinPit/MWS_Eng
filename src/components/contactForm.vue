@@ -36,7 +36,7 @@
             <input type="tel" v-model="phone" placeholder="Phone number" pattern="(\+?\d{1,3})?(\d{3})-?(\d{3})-?(\d{4})"
                 required />
             <label for="email">Email</label>
-            <input type="email" v-model="email" placeholder="Email" />
+            <input type="email" v-model="email" placeholder="Email address" />
             <input class="submit-button" type="submit" value="Send" />
         </form>
     </div>
